@@ -1,16 +1,16 @@
 'use client'
 
-/*import { usePathname } from "next/navigation"*/
+import { usePathname } from "next/navigation"
 import Link from 'next/link'
 import { NEXT_PUBLIC_SITE_TITLE } from '../app/server-constants'
 import styles from '../styles/header.module.css'
 
- {/*
+
 interface NavItem {
   label: string
   path: string
 }
-  */}
+
 
 const Header = () => {
   {/*
