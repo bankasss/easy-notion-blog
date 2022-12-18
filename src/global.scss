@@ -79,6 +79,7 @@ figure {
 }
 
 a {
+  display: block;
   color: var(--c_link);
   @include pc {
     transition: 0.2s;

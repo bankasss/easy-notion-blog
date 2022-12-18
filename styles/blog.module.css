@@ -89,7 +89,7 @@
   font-size: 20px;
 }
 .post :global(p) {
-  margin: 20px 0;
+  margin: 30px 0;
   font-size: 18px;
   min-height: 1.25;
 }

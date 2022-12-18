@@ -79,6 +79,7 @@ figure img {
 }
 
 a {
+  display: block;
   color: var(--c_link);
 }
 @media screen and (min-width: 751px) {
