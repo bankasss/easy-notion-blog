@@ -1,7 +1,14 @@
 .socialButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   list-style-type: none;
   padding: 0;
+  background: var(--c_sub);
+  padding: 20px 0;
 }
 .socialButtons li {
   display: inline-block;

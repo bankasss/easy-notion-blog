@@ -26,6 +26,7 @@ const Header = () => {
         </Link>
       </h1>
 
+      {/*
       <ul>
         {navItems.map(({ label, path }) => (
           <li key={label}>
@@ -35,6 +36,7 @@ const Header = () => {
           </li>
         ))}
       </ul>
+      */}
     </header>
   )
 }

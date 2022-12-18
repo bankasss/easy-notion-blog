@@ -1,32 +1,34 @@
+@charset "UTF-8";
 .postDate {
   padding: 0 0 0.3rem;
-  font-size: 0.9rem;
+  font-size: 14px;
+  color: var(--c_main);
+  margin-right: 12px;
+}
+.postDate::before {
+  content: "▶";
+  padding-right: 4px;
 }
 
 .postTags {
-  font-size: 0.9rem;
+  position: relative;
+  font-size: 12px;
+  bottom: 2px;
 }
 .postTags a {
-  padding-right: 0.8rem;
+  padding: 2px 5px;
+  color: var(--c_main);
+  background: var(--c_white);
+  text-decoration: none;
+}
+.postTags a::before {
+  content: "#";
 }
 
 .postTitle {
-  font-size: 1.6rem;
-  color: var(--fg);
-}
-@media (max-width: 600px) {
-  .postTitle {
-    font-size: 1.2rem;
-  }
-}
-.postTitle a {
-  font-size: 1.2rem;
-  color: inherit;
-}
-@media (max-width: 600px) {
-  .postTitle a {
-    font-size: 1.15rem;
-  }
+  margin-top: 12px;
+  font-size: 30px;
+  color: var(--c_main);
 }
 
 .postExcerpt {
@@ -51,7 +53,7 @@
   text-align: center;
   line-height: 3rem;
 }
-@media (max-width: 600px) {
+@media screen and (max-width: 750px) {
   .readMoreLink a {
     width: 50%;
   }
@@ -70,96 +72,60 @@
   text-align: center;
   line-height: 3rem;
 }
-@media (max-width: 600px) {
+@media screen and (max-width: 750px) {
   .nextPageLink a {
     width: 50%;
   }
 }
 
-.noContents {
+.blogPostLink, .blogTagLink {
+  background: var(--c_bg);
+  padding: 20px;
+  margin-bottom: 20px;
 }
-
-.blogPostLink {
-}
-.blogPostLink h3 {
+.blogPostLink h3, .blogTagLink h3 {
   margin: 0;
-  font-size: 1.1rem;
 }
-.blogPostLink ul {
+.blogPostLink ul, .blogTagLink ul {
   list-style-type: none;
   padding: 0;
-  margin-top: 0.3rem;
+  margin-top: 4px;
+  margin-bottom: 0;
 }
-.blogPostLink ul li {
+.blogPostLink ul li, .blogTagLink ul li {
   position: relative;
-  font-size: 0.95rem;
-  padding: 0.4rem 0;
-  padding-left: 0.7rem;
-  line-height: 1.2rem;
-}
-.blogPostLink ul li:before {
-  border-radius: 50%;
-  width: 5px;
-  height: 5px;
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0.9rem;
-  content: '';
-  background: #333;
-}
-
-.blogTagLink {
-}
-.blogTagLink h3 {
-  margin: 0;
-  font-size: 1.1rem;
-}
-.blogTagLink ul {
-  list-style-type: none;
   padding: 0;
-  margin-top: 0.3rem;
+  line-height: 1.5;
 }
-.blogTagLink ul li {
-  position: relative;
-  font-size: 1rem;
-  padding: 0.4rem 0;
-  padding-left: 0.7rem;
-  line-height: 1.2rem;
-}
-.blogTagLink ul li:before {
-  border-radius: 50%;
-  width: 5px;
-  height: 5px;
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0.9rem;
-  content: '';
-  background: #333;
+.blogPostLink ul li a, .blogTagLink ul li a {
+  font-size: 14px;
+  text-decoration: none;
+  color: var(--c_fg);
 }
 
-.postsNotFound {
-}
-
-@media (max-width: 600px) {
+@media screen and (max-width: 750px) {
   .tag {
     font-size: 0.75rem;
     padding-right: 0.75rem;
   }
-
   .post a.expandButton {
     width: 50%;
   }
-
   .post .caption {
     font-size: 0.9rem;
   }
-
   .nextContainer {
     padding: 0;
   }
   .nextContainer a.nextButton {
     width: 50%;
   }
+}
+.blogIndex.postDate {
+  padding: 0;
+  margin-right: 12px;
+}
+
+.blogIndex.postTitle {
+  margin-top: 6px;
 }

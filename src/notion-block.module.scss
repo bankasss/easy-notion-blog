@@ -1,0 +1,315 @@
+@charset "utf-8";
+@import "_setting";
+
+.divider {
+}
+
+.caption {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: var(--accents-3);
+  text-align: center;
+}
+
+.image {
+  margin: 0 auto;
+}
+.image > div:first-child {
+  text-align: center;
+}
+
+.equation {
+  overflow-x: scroll;
+}
+
+.code {
+  display: block;
+  width: 100%;
+  padding: 1rem 12px;
+  font-size: 15px;
+  background: var(--c_gray);
+  overflow-x: scroll;
+  .pre {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0;
+  }
+}
+.pre {
+  display: block;
+  overflow: auto;
+  padding: 0.8rem;
+  background: var(--c_gray);
+  line-height: 1.25;
+  .code {
+    color: var(--c_fg);
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    background: var(--c_gray);
+    font-family: 'Lato', sans-serif, YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3', sans-serif;
+  }
+}
+
+.gray, .gray:hover {
+  color: rgba(120, 119, 116, 1);
+}
+.brown, .brown:hover {
+  color: rgba(159, 107, 83, 1);
+}
+.orange, .orange:hover {
+  color: rgba(217, 115, 13, 1);
+}
+.yellow, .yellow:hover {
+  color: rgba(203, 145, 47, 1);
+}
+.green, .green:hover {
+  color: rgba(68, 131, 97, 1);
+}
+.blue, .blue:hover {
+  color: rgba(51, 126, 169, 1);
+}
+.purple, .purple:hover {
+  color: rgba(144, 101, 176, 1);
+}
+.pink, .pink:hover {
+  color: rgba(193, 76, 138, 1);
+}
+.red, .red:hover {
+  color: rgba(212, 76, 71, 1);
+}
+.grayBackground {
+  background: rgba(241, 241, 239, 1) !important;
+}
+.brownBackground {
+  background: rgba(244, 238, 238, 1) !important;
+}
+.orangeBackground {
+  background: rgba(251, 236, 221, 1) !important;
+}
+.yellowBackground {
+  background: rgba(251, 243, 219, 1) !important;
+}
+.greenBackground {
+  background: rgba(237, 243, 236, 1) !important;
+}
+.blueBackground {
+  background: rgba(231, 243, 248, 1) !important;
+}
+.purpleBackground {
+  background: rgba(244, 240, 247, 0.8) !important;
+}
+.pinkBackground {
+  background: rgba(249, 238, 243, 0.8) !important;
+}
+.redBackground {
+  background: rgba(253, 235, 236, 1) !important;
+}
+
+.callout {
+  display: flex;
+  margin: 1rem auto;
+  padding: 16px 12px;
+  width: 100%;
+  font-size: 15px;
+  line-height: 1.25;
+  background: var(--c_gray);
+  div {
+    margin: 0;
+    line-height: 1.25;
+    &:first-child {
+      margin-right: 0.7rem;
+    }
+  }
+}
+
+.table {
+  display: grid;
+  border-collapse: collapse;
+  tbody {
+    background-color: var(--c_white);
+  }
+  tr {
+    vertical-align: middle;
+  }
+  th {
+    background-color: #e6ecf7;
+  }
+  td,
+  th {
+    padding: 5px 10px;
+  }
+}
+
+.columnList {
+  display: flex;
+  width: 100%;
+  margin: 1rem auto;
+  gap: 0 1rem;
+  > div {
+    flex: 1 1 180px;
+    width: 180px;
+  }
+  @include sp {
+    display: block;
+    > div {
+      width: 100%;
+    }
+  }
+}
+
+.toDo {
+  color: #222;
+  font-weight: 400;
+  line-height: 1.25;
+  padding-inline-start: 1rem;
+  > div {
+  }
+  input {
+    background: var(--c_main);
+  }
+}
+
+.bookmark {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+  font-size: 0.9rem;
+  background-color: var(--c_white);
+  > a {
+    width: 100%;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: 1px solid rgba(55, 53, 47, 0.16);
+    border-radius: 3px;
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    > div:first-child {
+      flex: 4 1 180px;
+      padding: 12px 14px 14px;
+      overflow: hidden;
+      text-align: left;
+      color: var(--c_fg_sub);
+      > div:first-child {
+        font-size: 14px;
+        line-height: 20px;
+        white-space: pre-wrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        min-height: 24px;
+        margin-bottom: 2px;
+      }
+      > div:nth-child(2) {
+        font-size: 12px;
+        line-height: 16px;
+        height: 32px;
+        overflow: hidden;
+        color: var(--c_fg_sub);
+        display: none;
+      }
+      > div:last-child {
+        display: flex;
+        margin-top: 6px;
+        > div:first-child {
+          width: 16px;
+          height: 16px;
+          min-width: 16px;
+          margin-right: 6px;
+          > img {
+            max-width: 100%;
+            display: inline-block;
+          }
+        }
+        > div:last-child {
+         font-size: 12px;
+         line-height: 16px;
+         color: var(--fg);
+         white-space: nowrap;
+         overflow: hidden;
+         text-overflow: ellipsis;
+       }
+      }
+    }
+    > div:last-child {
+      flex: 1 1 180px;
+      position: relative;
+      @include sp {
+        display: none;
+      }
+    }
+  }
+  > a 
+  > a > div:last-child > img {
+    position: absolute !important;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+
+.toggle {
+  > summary {
+    cursor: pointer;
+  }
+}
+
+.tweetEmbed {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  div:first-child div:first-child {
+    margin: auto;
+  }
+}
+.video .youtube {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%;
+  :first-child {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+/*     pointer-events: none; */
+  }
+}
+
+.tableOfContents {
+  padding: 24px 20px;
+  background: var(--c_sub);
+  @include sp {
+    padding: 4%;
+  }
+  &::before {
+    display: block;
+    content: "目次";
+    color: var(--c_main);
+    font-weight: bold;
+    padding-bottom: 4px;
+  }
+  a {
+    display: block;
+    position: relative;
+    width: fit-content;
+    text-indent: 1em;
+    color: var(--c_fg);
+    text-decoration: none;
+    margin-bottom: 8px;
+    &::before {
+      display: block;
+      content: "・";
+      position: absolute;
+      text-align: center;
+      left: -1em;
+      color: var(--c_main);
+    }
+    &:last-child {
+     margin-bottom: 0; 
+    }
+  }
+}

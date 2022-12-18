@@ -39,23 +39,26 @@ const BlogPage = async () => {
           {posts.map(post => {
             return (
               <div className={styles.post} key={post.Slug}>
-                <PostDate post={post} />
-                <PostTags post={post} />
-                <PostTitle post={post} />
-                <PostExcerpt post={post} />
-                <ReadMoreLink post={post} />
+                <div className="col2">
+                  <PostDate post={post}/>
+                  <PostTags post={post}/>
+                </div>
+                <PostTitle post={post}/>
+                <PostExcerpt post={post}/>
+                {/*<ReadMoreLink post={post} />*/}
+                <hr className="divider"></hr>
               </div>
             )
           })}
 
-          <footer>
+          {/*<footer>
             <NextPageLink firstPost={firstPost} posts={posts} />
-          </footer>
+          </footer>*/}
         </div>
 
         <div className={styles.subContent}>
-          <BlogPostLink heading="Recommended" posts={rankedPosts} />
-          <BlogTagLink heading="Categories" tags={tags} />
+          <BlogPostLink heading="最近の投稿" posts={rankedPosts} />
+          <BlogTagLink heading="カテゴリ" tags={tags} />
         </div>
       </div>
     </>

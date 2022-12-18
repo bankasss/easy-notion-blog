@@ -1,0 +1,140 @@
+@charset "utf-8";
+@import "_setting";
+
+
+.postDate {
+  padding: 0 0 0.3rem;
+  font-size: 14px;
+  color: var(--c_main);
+  margin-right: 12px;
+  &::before {
+    content: "▶";
+    padding-right: 4px;
+  }
+}
+
+.postTags {
+  position: relative;
+  font-size: 12px;
+  bottom: 2px;
+  a {
+    padding: 2px 5px;
+    color: var(--c_main);
+    background: var(--c_white);
+    text-decoration: none;
+    &::before {
+      content: "#";
+    }
+  }
+}
+
+.postTitle {
+  margin-top: 12px;
+  font-size: 30px;
+  color: var(--c_main);
+}
+
+
+.postExcerpt {
+  padding: 0.4rem 0;
+  font-size: 1rem;
+}
+
+.postBody {
+  padding: 0.5rem 0;
+}
+
+.readMoreLink {
+  color: var(--fg);
+  a {
+    display: block;
+    width: 30%;
+    margin: 1rem auto 0;
+    border: 1px solid var(--accents-2);
+    color: inherit;
+    font-size: 0.85rem;
+    text-align: center;
+    line-height: 3rem;
+    @include sp {
+      width: 50%;
+    }
+  }
+}
+
+.nextPageLink {
+  color: var(--fg);
+  a {
+    display: block;
+    width: 30%;
+    margin: 0 auto;
+    border: 1px solid var(--accents-2);
+    color: inherit;
+    font-size: 0.85rem;
+    text-align: center;
+    line-height: 3rem;
+    @include sp {
+      width: 50%;
+    }
+  }
+}
+
+.noContents {
+}
+
+.blogPostLink,.blogTagLink {
+  background: var(--c_bg);
+  padding: 20px;
+  margin-bottom: 20px;
+  h3 {
+    margin: 0;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 4px;
+    margin-bottom: 0;
+    li {
+      position: relative;
+      padding: 0;
+      line-height: 1.5;
+      a {
+        font-size: 14px;
+        text-decoration: none;
+        color: var(--c_fg);
+      }
+    }
+  }
+}
+
+.postsNotFound {
+}
+
+@include sp {
+  .tag {
+    font-size: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .post a.expandButton {
+    width: 50%;
+  }
+
+  .post .caption {
+    font-size: 0.9rem;
+  }
+
+  .nextContainer {
+    padding: 0;
+  }
+  .nextContainer a.nextButton {
+    width: 50%;
+  }
+}
+
+.blogIndex.postDate {
+  padding: 0;
+  margin-right: 12px;
+}
+.blogIndex.postTitle {
+  margin-top: 6px;
+}

@@ -50,30 +50,33 @@ const BlogTagPage = async ({ params: { tag: encodedTag } }) => {
       <div className={styles.container}>
         <div className={styles.mainContent}>
           <header>
-            <h2>{tag}</h2>
+            <h2 className='content_title-blog'>{tag}</h2>
           </header>
 
           {posts.map(post => {
             return (
               <div className={styles.post} key={post.Slug}>
-                <PostDate post={post} />
-                <PostTags post={post} />
+                <div className="col2">
+                  <PostDate post={post} />
+                  <PostTags post={post} />
+                </div>
                 <PostTitle post={post} />
                 <PostExcerpt post={post} />
-                <ReadMoreLink post={post} />
+                {/*<ReadMoreLink post={post} />*/}
+                <hr className="divider"></hr>
               </div>
             )
           })}
 
-          <footer>
+          {/*<footer>
             <NextPageLink firstPost={firstPost} posts={posts} tag={tag} />
-          </footer>
+          </footer>*/}
         </div>
 
         <div className={styles.subContent}>
-          <BlogPostLink heading="Recommended" posts={rankedPosts} />
-          <BlogPostLink heading="Latest Posts" posts={recentPosts} />
-          <BlogTagLink heading="Categories" tags={tags} />
+          {/*<BlogPostLink heading="Recommended" posts={rankedPosts} />*/}
+          <BlogPostLink heading="最近の投稿" posts={recentPosts} />
+          <BlogTagLink heading="カテゴリ" tags={tags} />
         </div>
       </div>
     </>

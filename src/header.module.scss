@@ -1,0 +1,50 @@
+@charset "utf-8";
+@import "_setting";
+
+.header {
+  display: block;
+  border-top: solid 4px var(--c_main);
+  padding: 20px 0;
+  @include sp {
+    padding: 3.5vw 0;
+  }
+  text-align: center;
+  h1 {
+    position: relative;
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: left;
+    left: 3%;
+    height: 4vw;
+    max-height: 20px;
+    width: auto;
+    background: url("../public/logo_bankas.svg") no-repeat center left;
+    background-size: contain;
+    a {
+      display: block;
+      height: 100%;
+      color: transparent;
+    }
+  }
+  ul {
+    list-style: none;
+    margin: inherit;
+    font-size: 1.1rem;
+    max-width: 1400px;
+    text-align: left;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 0 3%;
+    li {
+      display: inline-block;
+      padding: 0 15px;
+      :global(a.active) {
+        color: var(--c_main);
+      }
+      a {
+        color: var(--c_main);
+        text-decoration: none;
+      }
+    }
+  }
+}

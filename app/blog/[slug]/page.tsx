@@ -62,14 +62,16 @@ const BlogSlugPage = async ({ params: { slug } }) => {
       <div className={styles.container}>
         <div className={styles.mainContent}>
           <div className={styles.post}>
-            <PostDate post={post} />
-            <PostTags post={post} />
+            <div className="col2">
+              <PostDate post={post} />
+              <PostTags post={post} />
+            </div>
             <PostTitle post={post} enableLink={false} />
 
             <NoContents contents={blocks} />
             <PostBody blocks={blocks} />
-
-            <footer>
+            
+            {/*<footer>
               {NEXT_PUBLIC_URL && (
                 <SocialButtons
                   title={post.Title}
@@ -80,18 +82,20 @@ const BlogSlugPage = async ({ params: { slug } }) => {
                   id={post.Slug}
                 />
               )}
-            </footer>
+            </footer>*/}
           </div>
         </div>
 
         <div className={styles.subContent}>
+          {/*
           <BlogPostLink
             heading="Posts in the same category"
             posts={otherPostsHavingSameTag}
           />
-          <BlogPostLink heading="Recommended" posts={rankedPosts} />
-          <BlogPostLink heading="Latest posts" posts={recentPosts} />
-          <BlogTagLink heading="Categories" tags={tags} />
+          */}
+          {/*<BlogPostLink heading="Recommended" posts={rankedPosts} />*/}
+          <BlogPostLink heading="最近の投稿" posts={recentPosts} />
+          <BlogTagLink heading="カテゴリ" tags={tags} />
         </div>
       </div>
     </>

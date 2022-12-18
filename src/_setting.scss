@@ -1,0 +1,22 @@
+@charset "utf-8";
+@mixin pc {
+  @media screen and (min-width: 751px) {
+  @content;
+  }
+}
+@mixin sp {
+  @media screen and (max-width: 750px) {
+  @content;
+  }
+}
+
+$viewport: 1100;
+@function pxVw($px) {
+  @return (($px / $viewport) * 100) + vw;
+}
+
+@mixin rem($size) {
+  font-size: $size + px;
+  font-size: ($size / 16) + rem;
+}
+
