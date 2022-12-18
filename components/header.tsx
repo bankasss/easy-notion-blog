@@ -13,14 +13,14 @@ interface NavItem {
 
 
 const Header = () => {
-  {/*
+  
   const pathname = usePathname()
 
   const navItems: NavItem[] = [
     { label: 'Home', path: '/' },
     { label: 'Blog', path: '/blog' },
   ]
-  */}
+  
 
   return (
     <header className={styles.header}>
@@ -30,7 +30,7 @@ const Header = () => {
         </Link>
       </h1>
 
-      {/*
+      
       <ul>
         {navItems.map(({ label, path }) => (
           <li key={label}>
@@ -40,7 +40,7 @@ const Header = () => {
           </li>
         ))}
       </ul>
-      */}
+      
     </header>
   )
 }
