@@ -3,6 +3,7 @@
 
 .header {
   display: block;
+  overflow: hidden;
   border-top: solid 4px var(--c_main);
   padding: 20px 0;
   @include sp {
