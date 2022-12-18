@@ -278,3 +278,6 @@ hr {
 .post-top {
   margin: 0 auto 20px !important;
 }
+.post-top h3 a {
+  font-weight: normal;
+}
