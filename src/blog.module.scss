@@ -7,7 +7,7 @@
   max-width: 1400px;
   padding: 0 3%;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 1.1rem;
   @include sp {
     display: block;
     margin-top: 10px;
@@ -23,7 +23,7 @@
     padding: 4%;
   }
   header {
-    padding: 0 0 20px;
+    padding: 0 0 1.1rem;
     text-align: center;
   }
   footer {
@@ -37,15 +37,18 @@
 }
 
 .subContent {
-  width: calc(40% - 20px);
+  width: calc(40% - 1.1rem);
   @include sp {
     width: 100%;
-    margin-top: 20px;
+    margin-top: 1.1rem;
   }
 }
 
 .post {
   margin: 0 auto 40px;
+  &:last-child {
+    margin: 0 auto;
+  }
   a {
     text-decoration: none;
   }
@@ -61,7 +64,7 @@
     margin: 1.8rem 0 0.8rem;
     padding-left: 4px;
     color: var(--c_white);
-    font-size: 23px;
+    font-size: 1.1rem;
     font-weight: bold;
     width: 100%;
     background: linear-gradient(to right, #ffc1c1, #ff7ab4);
@@ -69,18 +72,18 @@
   :global(h5) {
     margin: 1.8rem 0 0.8rem;
     color: var(--c_main);
-    font-size: 20px;
+    font-size: 1.1rem;
     font-weight: bold;
   }
   :global(h6) {
     margin: 1.8rem 0 0.8rem;
     color: var(--c_fg);
-    font-size: 20px;
+    font-size: 1.1rem;
   }
   :global(p) {
-    margin: 20px 0;
-    font-size: 18px;
-    min-height: 1.25;
+    margin: 0.3rem 0;
+    font-size: 1rem;
+    line-height: 1.35;
   }
   :global(video),
   :global(img) {
@@ -91,7 +94,7 @@
     margin: 0.6rem 0;
     padding: 0 0.9rem;
     border-left: 3px solid var(--c_main);
-    font-size: 15px;
+    font-size: 1rem;
     line-height: 1.8rem;
   }
   table {

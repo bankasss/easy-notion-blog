@@ -29,7 +29,7 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 16px;
 }
 
 html,
@@ -42,7 +42,6 @@ body {
   min-height: 100vh;
   background: var(--c_white);
   color: var(--c_fg);
-  font-size: 18px;
   font-family: "Lato", sans-serif, YuGothic, "Yu Gothic", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", sans-serif;
   background-position: 0 0, 25px 25px;
   background-attachment: fixed;
@@ -79,7 +78,6 @@ figure img {
 }
 
 a {
-  display: block;
   color: var(--c_link);
 }
 @media screen and (min-width: 751px) {
@@ -101,14 +99,19 @@ mark {
 h1 {
   margin: 0;
   color: var(--c_main);
-  font-size: 30px;
+  font-size: 2rem;
   font-weight: 700;
+}
+@media screen and (max-width: 750px) {
+  h1 {
+    font-size: 1.6rem;
+  }
 }
 
 h2 {
   margin: 0;
   color: var(--c_white);
-  font-size: 23px;
+  font-size: 1.2rem;
   font-weight: bold;
   width: 100%;
   background: -webkit-gradient(linear, left top, right top, from(#ffc1c1), to(#ff7ab4));
@@ -118,7 +121,7 @@ h2 {
 h3 {
   margin: 0;
   color: var(--c_main);
-  font-size: 20px;
+  font-size: 1.2rem;
   font-weight: bold;
 }
 
@@ -128,7 +131,7 @@ ol {
 
 p,
 ul {
-  font-size: 18px;
+  font-size: 1rem;
   line-height: 1.25;
 }
 
@@ -193,10 +196,6 @@ hr {
   position: absolute;
   width: 100%;
   height: 100%;
-  /*     background-image: 
-      url("../public/mv_chara.png"),
-      url("../public/mv_bg.png"),
-      linear-gradient(to bottom, #ffd5e7, #cfedff); */
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ffd5e7), to(#cfedff));
   background-image: linear-gradient(to bottom, #ffd5e7, #cfedff);
   background-repeat: no-repeat;

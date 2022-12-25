@@ -8,7 +8,7 @@
   max-width: 1400px;
   padding: 0 3%;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 1.1rem;
 }
 @media screen and (max-width: 750px) {
   .container {
@@ -29,7 +29,7 @@
   }
 }
 .mainContent header {
-  padding: 0 0 20px;
+  padding: 0 0 1.1rem;
   text-align: center;
 }
 .mainContent footer {
@@ -44,17 +44,20 @@
 }
 
 .subContent {
-  width: calc(40% - 20px);
+  width: calc(40% - 1.1rem);
 }
 @media screen and (max-width: 750px) {
   .subContent {
     width: 100%;
-    margin-top: 20px;
+    margin-top: 1.1rem;
   }
 }
 
 .post {
   margin: 0 auto 40px;
+}
+.post:last-child {
+  margin: 0 auto;
 }
 .post a {
   text-decoration: none;
@@ -71,7 +74,7 @@
   margin: 1.8rem 0 0.8rem;
   padding-left: 4px;
   color: var(--c_white);
-  font-size: 23px;
+  font-size: 1.1rem;
   font-weight: bold;
   width: 100%;
   background: -webkit-gradient(linear, left top, right top, from(#ffc1c1), to(#ff7ab4));
@@ -80,18 +83,18 @@
 .post :global(h5) {
   margin: 1.8rem 0 0.8rem;
   color: var(--c_main);
-  font-size: 20px;
+  font-size: 1.1rem;
   font-weight: bold;
 }
 .post :global(h6) {
   margin: 1.8rem 0 0.8rem;
   color: var(--c_fg);
-  font-size: 20px;
+  font-size: 1.1rem;
 }
 .post :global(p) {
-  margin: 20px 0;
-  font-size: 18px;
-  min-height: 1.25;
+  margin: 0.3rem 0;
+  font-size: 1rem;
+  line-height: 1.35;
 }
 .post :global(video),
 .post :global(img) {
@@ -102,7 +105,7 @@
   margin: 0.6rem 0;
   padding: 0 0.9rem;
   border-left: 3px solid var(--c_main);
-  font-size: 15px;
+  font-size: 1rem;
   line-height: 1.8rem;
 }
 .post table {

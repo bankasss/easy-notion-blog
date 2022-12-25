@@ -26,13 +26,14 @@
   display: block;
   width: 100%;
   padding: 1rem 12px;
-  font-size: 15px;
+  font-size: 0.9rem;
   background: var(--c_gray);
   overflow-x: scroll;
   .pre {
     padding-top: 0;
     padding-bottom: 0;
     margin: 0;
+    line-height: 1.25;
   }
 }
 .pre {
@@ -40,12 +41,12 @@
   overflow: auto;
   padding: 0.8rem;
   background: var(--c_gray);
-  line-height: 1.25;
   .code {
     color: var(--c_fg);
     padding: 0;
     margin: 0;
-    font-size: 15px;
+    font-size: 0.9rem;
+    line-height: 1.25;
     background: var(--c_gray);
     font-family: 'Lato', sans-serif, YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3', sans-serif;
   }
@@ -110,9 +111,8 @@
   display: flex;
   margin: 1rem auto;
   padding: 16px 12px;
-  width: 100%;
-  font-size: 15px;
-  line-height: 1.25;
+  font-size: 0.95rem;
+  line-height: 1.6rem;
   background: var(--c_gray);
   div {
     margin: 0;
@@ -275,7 +275,6 @@
     right: 0;
     width: 100%;
     height: 100%;
-/*     pointer-events: none; */
   }
 }
 
@@ -296,6 +295,8 @@
     display: block;
     position: relative;
     width: fit-content;
+    font-size: 0.9rem;
+    line-height: 1.5;
     text-indent: 1em;
     color: var(--c_fg);
     text-decoration: none;

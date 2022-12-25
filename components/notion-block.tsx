@@ -111,10 +111,16 @@ const Heading = ({ heading, level = 1 }) => {
     heading.RichTexts.map((richText: interfaces.RichText) => <RichText richText={richText} key={id} />)
   )
 
-  return (
+  /*return (
     <a href={`#${id}`} id={id}>
       {htag}
     </a>
+  )*/
+  
+  return (
+    <div id={id}>
+      {htag}
+    </div>
   )
 }
 
