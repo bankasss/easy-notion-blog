@@ -157,16 +157,12 @@ hr {
 .mv {
   width: 100%;
   position: relative;
-  height: 662px;
-  background-image: url("../public/mv_chara.png");
-  background-repeat: no-repeat;
-  background-position: center;
+  height: 500px;
 }
 @media screen and (max-width: 750px) {
   .mv {
     height: 82vw;
     background-size: 90%;
-    background-position: bottom center;
   }
 }
 .mv::before {
@@ -176,6 +172,7 @@ hr {
   background-image: url("../public/mv_chara.png");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
   top: 0;
   left: 0;
   position: absolute;
@@ -200,6 +197,7 @@ hr {
   background-image: linear-gradient(to bottom, #ffd5e7, #cfedff);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
 }
 .mv .mv_chara::before {
   content: "";
@@ -208,6 +206,7 @@ hr {
   background-image: url("../public/mv_chara.png"), url("../public/mv_bg.png");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
   top: 0;
   left: 0;
   position: absolute;
@@ -279,4 +278,32 @@ hr {
 }
 .post-top h3 a {
   font-weight: normal;
+}
+
+.bookmark-booth {
+  overflow-x: hidden;
+}
+.bookmark-booth a .bookmark-booth-title {
+  overflow-x: hidden;
+  -webkit-animation: flowing 15s linear infinite;
+          animation: flowing 15s linear infinite;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+.bookmark-booth a .bookmark-booth-title p {
+  white-space: nowrap;
+}
+
+@-webkit-keyframes flowing {
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@keyframes flowing {
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
 }

@@ -24,8 +24,11 @@
 }
 .header h1 a {
   display: block;
-  height: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   color: transparent;
+  opacity: 0;
 }
 .header ul {
   display: none;

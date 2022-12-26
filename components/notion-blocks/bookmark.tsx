@@ -48,6 +48,20 @@ const Bookmark = ({ block }) => {
 
   const { title, description, image } = metadata
 
+  if (sURL.indexOf('booth.pm') != -1) {
+    return (
+      <div className='bookmark-booth'>
+        <a href={url.toString()} target="_blank" rel="noopener noreferrer">
+            {image
+              ? <img src={image} alt={title ? title : ''} loading="lazy" decoding="async" />
+              : null
+            }
+            <div className='bookmark-booth-title'><p>{title ? title : ''}</p></div>
+        </a>
+      </div>
+    )
+  }
+
   return (
     <div className={styles.bookmark}>
       <a href={url.toString()} target="_blank" rel="noopener noreferrer">

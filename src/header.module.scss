@@ -23,8 +23,9 @@
     background-size: contain;
     a {
       display: block;
-      height: 100%;
+      width: fit-content;
       color: transparent;
+      opacity: 0;
     }
   }
   ul {

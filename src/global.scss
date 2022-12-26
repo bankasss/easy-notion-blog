@@ -147,14 +147,10 @@ hr {
 .mv {
   width: 100%;
   position: relative;
-  height: 662px;
-  background-image: url("../public/mv_chara.png");
-  background-repeat: no-repeat;
-  background-position: center;
+  height: 500px;
   @include sp {
     height: 82vw;
     background-size: 90%;
-    background-position: bottom center;
   }
   &::before {
     content: "";
@@ -163,6 +159,7 @@ hr {
     background-image: url("../public/mv_chara.png");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: contain;
     top: 0;
     left: 0;
     position: absolute;
@@ -182,6 +179,7 @@ hr {
     background-image: linear-gradient(to bottom, #ffd5e7, #cfedff);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: contain;
     &::before {
       content: "";
       width: 100%;
@@ -191,6 +189,7 @@ hr {
       url("../public/mv_bg.png");
       background-repeat: no-repeat;
       background-position: center;
+      background-size: contain;
       top: 0;
       left: 0;
       position: absolute;
@@ -261,5 +260,25 @@ hr {
   margin: 0 auto 20px !important;
   h3 a {
     font-weight: normal;
+  }
+}
+
+.bookmark-booth {
+  overflow-x: hidden;
+  a {
+    .bookmark-booth-title {
+      overflow-x: hidden;
+      animation: flowing 15s linear infinite;
+      transform:translateX(100%); 
+      p {
+        white-space: nowrap;
+      }
+    }
+  }
+}
+
+@keyframes flowing {
+  100% {
+    transform:translateX(-100%); 
   }
 }
