@@ -46,7 +46,6 @@ const DocumentHead = ({ title = '', description = '', path = '', urlOgImage = ''
         href={new URL(path, NEXT_PUBLIC_URL).toString()}
       />
     ) : null}
-    <meta name="robots" content="noindex"></meta>
   </>
 )
 
