@@ -35,9 +35,6 @@ const BlogPage = async () => {
   return (
     <>
       <GoogleAnalytics pageTitle={NEXT_PUBLIC_SITE_TITLE} />
-      <div className="mv">
-        <div className="mv_chara"></div>
-      </div>
 
       <div className={styles.container} >
         <div className="col1">
