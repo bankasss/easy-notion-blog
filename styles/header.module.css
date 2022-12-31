@@ -19,16 +19,14 @@
   height: 4vw;
   max-height: 20px;
   width: auto;
-  background: url("../public/logo_bankas.svg") no-repeat center left;
-  background-size: contain;
 }
 .header h1 a {
   display: block;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  color: transparent;
-  opacity: 0;
+  color: var(--c_main);
+  text-decoration: none;
 }
 .header ul {
   display: none;
