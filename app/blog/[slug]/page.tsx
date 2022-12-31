@@ -66,6 +66,7 @@ const BlogSlugPage = async ({ params: { slug } }) => {
               <PostDate post={post} />
               <PostTags post={post} />
             </div>
+            <img src={NEXT_PUBLIC_URL && post.OGImage && new URL(`/api/og-image/${post.Slug}`, NEXT_PUBLIC_URL).toString()} alt="" />
             <PostTitle post={post} enableLink={false} />
 
             <NoContents contents={blocks} />
