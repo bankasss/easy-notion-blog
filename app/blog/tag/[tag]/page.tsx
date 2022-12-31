@@ -61,6 +61,7 @@ const BlogTagPage = async ({ params: { tag: encodedTag } }) => {
                   <PostTags post={post} />
                 </div>
                 <PostTitle post={post} />
+                <img src={NEXT_PUBLIC_URL && post.OGImage && new URL(`/api/og-image/${post.Slug}`, NEXT_PUBLIC_URL).toString()} alt="" />
                 <PostExcerpt post={post} />
                 {/*<ReadMoreLink post={post} />*/}
                 <hr className="divider"></hr>
