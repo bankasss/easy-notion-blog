@@ -19,6 +19,7 @@ const DocumentHead = ({ title = '', description = '', path = '', urlOgImage = ''
       />
     ) : null}
     <meta property="og:title" content={title ? title : NEXT_PUBLIC_SITE_TITLE} />
+    <meta name="googlebot" content="noindex" />
     <meta
       property="og:description"
       content={description ? description : NEXT_PUBLIC_SITE_DESCRIPTION}
