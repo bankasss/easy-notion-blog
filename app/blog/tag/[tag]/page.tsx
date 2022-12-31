@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation'
-import { NUMBER_OF_POSTS_PER_PAGE } from '../../../../app/server-constants'
+import { NUMBER_OF_POSTS_PER_PAGE,NEXT_PUBLIC_URL } from '../../../../app/server-constants'
 import GoogleAnalytics from '../../../../components/google-analytics'
 import {
   BlogPostLink,
@@ -61,7 +61,7 @@ const BlogTagPage = async ({ params: { tag: encodedTag } }) => {
                   <PostTags post={post} />
                 </div>
                 <PostTitle post={post} />
-                <img src={NUMBER_OF_POSTS_PER_PAGE && post.OGImage && new URL(`/api/og-image/${post.Slug}`,NUMBER_OF_POSTS_PER_PAGE).toString()} alt="" />
+                <img src={NEXT_PUBLIC_URL && post.OGImage && new URL(`/api/og-image/${post.Slug}`, NEXT_PUBLIC_URL).toString()} alt="" />
                 <PostExcerpt post={post} />
                 {/*<ReadMoreLink post={post} />*/}
                 <hr className="divider"></hr>
