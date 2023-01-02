@@ -350,6 +350,11 @@ hr {
   bottom: -6px;
   right: -14px;
 }
+@media screen and (min-width: 751px) {
+  .like-button button:hover {
+    opacity: 0.5;
+  }
+}
 .like-button button.is-clicked {
   background-color: var(--c_white);
   border-color: var(--c_main);
@@ -362,6 +367,11 @@ hr {
 .like-button button.is-clicked::after {
   -webkit-animation: heart 1.5s 0.2s infinite ease-out;
           animation: heart 1.5s 0.2s infinite ease-out;
+}
+@media screen and (min-width: 751px) {
+  .like-button button.is-clicked:hover {
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes heart {

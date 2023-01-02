@@ -322,6 +322,11 @@ hr {
     bottom: -6px;
     right: -14px;
   }
+  @include pc {
+    &:hover {
+      opacity: 0.5;
+    }
+  }
   &.is-clicked{
     background-color: var(--c_white);
     border-color: var(--c_main);
@@ -332,6 +337,11 @@ hr {
     
     &::after {
       animation: heart 1.5s 0.2s infinite ease-out;
+    }
+    @include pc {
+      &:hover {
+        opacity: 1.0;
+      }
     }
   }
 }
