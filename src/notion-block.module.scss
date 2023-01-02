@@ -304,21 +304,20 @@
     padding-bottom: 4px;
   }
   a {
-    display: block;
+    display: flex;
     position: relative;
     width: fit-content;
     font-size: 0.9rem;
     line-height: 1.5;
-    text-indent: 1em;
+    text-indent: 0;
     color: var(--c_fg);
     text-decoration: none;
     margin-bottom: 8px;
     &::before {
       display: block;
       content: "・";
-      position: absolute;
+      position: relative;
       text-align: center;
-      left: -1em;
       color: var(--c_main);
     }
     &:last-child {

@@ -363,3 +363,8 @@ hr {
     opacity: 0;
   }
 }
+
+::selection {
+  background: var(--c_main);
+  color: #fff;
+}

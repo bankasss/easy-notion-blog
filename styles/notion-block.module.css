@@ -351,14 +351,16 @@
   padding-bottom: 4px;
 }
 .tableOfContents a {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: relative;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   font-size: 0.9rem;
   line-height: 1.5;
-  text-indent: 1em;
+  text-indent: 0;
   color: var(--c_fg);
   text-decoration: none;
   margin-bottom: 8px;
@@ -366,9 +368,8 @@
 .tableOfContents a::before {
   display: block;
   content: "・";
-  position: absolute;
+  position: relative;
   text-align: center;
-  left: -1em;
   color: var(--c_main);
 }
 .tableOfContents a:last-child {

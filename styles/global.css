@@ -411,3 +411,11 @@ hr {
     opacity: 0;
   }
 }
+::-moz-selection {
+  background: var(--c_main);
+  color: #fff;
+}
+::selection {
+  background: var(--c_main);
+  color: #fff;
+}
