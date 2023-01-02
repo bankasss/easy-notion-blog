@@ -27,6 +27,7 @@
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  height: -webkit-fill-available;
   color: transparent;
   opacity: 0;
 }

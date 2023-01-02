@@ -24,6 +24,7 @@
     a {
       display: block;
       width: fit-content;
+      height: -webkit-fill-available;
       color: transparent;
       opacity: 0;
     }

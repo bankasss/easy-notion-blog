@@ -63,6 +63,8 @@ body {
 .col2 {
   display: flex;
   align-items: center;
+  align-items: end;
+  padding: 0 0 0.3rem;
 }
 
 figure {
@@ -267,7 +269,6 @@ hr {
   overflow-x: hidden;
   a {
     .bookmark-booth-title {
-      overflow-x: hidden;
       animation: flowing 15s linear infinite;
       transform:translateX(100%); 
       p {

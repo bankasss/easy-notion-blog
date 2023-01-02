@@ -3,24 +3,24 @@
 
 
 .postDate {
-  padding: 0 0 0.3rem;
+  display: flex;
+  align-items: center;
   font-size: 14px;
   color: var(--c_main);
-  margin-right: 12px;
+  margin-right: 6px;
   &::before {
     content: "▶";
     padding-right: 4px;
+    font-size: 10px;
   }
 }
 
 .postTags {
   position: relative;
-  font-size: 12px;
-  bottom: 2px;
+  font-size: 13px;
   a {
-    padding: 2px 5px;
+    padding: 0 5px;
     color: var(--c_main);
-    background: var(--c_white);
     text-decoration: none;
     &::before {
       content: "#";

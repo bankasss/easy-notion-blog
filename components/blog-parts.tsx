@@ -46,6 +46,18 @@ export const PostTags = ({ post }) => (
   </div>
 )
 
+export const PostBoothUrl = ({ post }) => (
+  <div className={styles.postBoothUrl}>
+    {post.BoothUrl &&
+      post.BoothUrl.length > 0 &&
+      post.BoothUrl.map((boothurl: string) => (
+        <Link href={getTagLink(boothurl)} key={boothurl}>
+          {boothurl}
+        </Link>
+      ))}
+  </div>
+)
+
 export const PostExcerpt = ({ post }) => (
   <div className={styles.postExcerpt}>
     <p>{post.Excerpt ? post.Excerpt : ''}</p>
