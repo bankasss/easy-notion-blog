@@ -310,3 +310,94 @@ hr {
             transform: translateX(-100%);
   }
 }
+/* ボタン:https://web-dev.tech/front-end/css/show-heart-button-css/ */
+.like-button button {
+  position: relative;
+  display: inline-block;
+  background-color: var(--c_main);
+  padding: 0.4em 2.4em;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  margin-top: 1rem;
+  font-weight: bold;
+  font-size: 1rem;
+  color: var(--c_white);
+  letter-spacing: 0.1em;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  width: 100%;
+}
+.like-button button::before, .like-button button::after {
+  content: "";
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  opacity: 0;
+  -webkit-filter: hue-rotate(-20deg) brightness(1.5);
+          filter: hue-rotate(-20deg) brightness(1.5);
+}
+.like-button button::before {
+  background-image: url("../public/icon_heart.svg");
+  top: 0;
+  left: -12px;
+}
+.like-button button::after {
+  background-image: url("../public/icon_heart-reverse.svg");
+  bottom: -6px;
+  right: -14px;
+}
+.like-button button.is-clicked {
+  background-color: var(--c_white);
+  border-color: var(--c_main);
+  color: var(--c_main);
+}
+.like-button button.is-clicked::before {
+  -webkit-animation: heart 1.5s infinite ease-out;
+          animation: heart 1.5s infinite ease-out;
+}
+.like-button button.is-clicked::after {
+  -webkit-animation: heart 1.5s 0.2s infinite ease-out;
+          animation: heart 1.5s 0.2s infinite ease-out;
+}
+
+@-webkit-keyframes heart {
+  0% {
+    -webkit-transform: translateY(0) scale(1);
+            transform: translateY(0) scale(1);
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-20px) scale(1.4);
+            transform: translateY(-20px) scale(1.4);
+    opacity: 0;
+  }
+}
+
+@keyframes heart {
+  0% {
+    -webkit-transform: translateY(0) scale(1);
+            transform: translateY(0) scale(1);
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-20px) scale(1.4);
+            transform: translateY(-20px) scale(1.4);
+    opacity: 0;
+  }
+}

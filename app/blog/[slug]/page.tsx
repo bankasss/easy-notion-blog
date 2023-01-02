@@ -85,7 +85,7 @@ const BlogSlugPage = async ({ params: { slug } }) => {
               )}
             </footer>*/}
             <footer>
-              <LikeButton slug={post.Slug} />
+              <div className="like-button"><LikeButton slug={post.Slug}/></div>
             </footer>
           </div>
         </div>
