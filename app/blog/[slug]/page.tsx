@@ -23,6 +23,7 @@ import {
   getAllTags,
   getAllBlocksByBlockId,
 } from '../../../lib/notion/client'
+import LikeButton from '../../../components/like-button'
 
 export const revalidate = 30
 export const dynamicParams = false
@@ -83,6 +84,9 @@ const BlogSlugPage = async ({ params: { slug } }) => {
                 />
               )}
             </footer>*/}
+            <footer>
+              <LikeButton slug={post.Slug} />
+            </footer>
           </div>
         </div>
 

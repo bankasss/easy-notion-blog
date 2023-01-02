@@ -723,6 +723,21 @@ export async function getAllTags(): Promise<string[]> {
     .sort()
 }
 
+export async function incrementLikes(post:Post) {
+  const result = await client.pages.update({
+    page_id: post.PageId,
+    properties: {
+      'Like': (post.Like || 0) + 1,
+    },
+  })
+
+  if (!result) {
+    return null
+  }
+
+  return _buildPost(result)
+}
+
 function _buildFilter(conditions = []) {
   if (process.env.NODE_ENV === 'development') {
     return { and: conditions }
@@ -785,6 +800,7 @@ function _buildPost(pageObject: responses.PageObject): Post {
     OGImage:
       prop.OGImage.files.length > 0 ? prop.OGImage.files[0].file.url : null,
     Rank: prop.Rank.number,
+    Like: prop.Like.number,
   }
 
   return post
