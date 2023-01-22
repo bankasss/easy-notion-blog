@@ -149,9 +149,9 @@ hr {
 .mv {
   width: 100%;
   position: relative;
-  height: 500px;
+  height: 400px;
   @include sp {
-    height: 82vw;
+    height: 50vw;
     background-size: 90%;
   }
   &::before {

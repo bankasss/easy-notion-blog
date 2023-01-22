@@ -161,11 +161,11 @@ hr {
 .mv {
   width: 100%;
   position: relative;
-  height: 500px;
+  height: 400px;
 }
 @media screen and (max-width: 750px) {
   .mv {
-    height: 82vw;
+    height: 50vw;
     background-size: 90%;
   }
 }
