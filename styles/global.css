@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&family=Playfair+Display:wght@600&display=swap");
 :root {
   --gap-quarter: 0.25rem;
   --gap-half: 0.5rem;
@@ -10,6 +10,7 @@
   --c_fg: #111;
   --c_fg_sub: #6c6266;
   --c_gray:#e9edf3;
+  --c_red:#c33636;
   --c_main: #ff8dbe;
   --c_sub: #fff3f8;
   --c_link: #327ad3;
@@ -19,7 +20,6 @@
   --geist-foreground: #000;
   --geist-success: #690;
   --radius: 4px;
-  --font-sans: "Lato", sans-serif;
 }
 
 * {
@@ -115,11 +115,17 @@ h1 {
 h2 {
   margin: 0;
   color: var(--c_white);
-  font-size: 1.2rem;
-  font-weight: bold;
+  font-size: 1.6rem;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
   width: 100%;
   background: -webkit-gradient(linear, left top, right top, from(#ffc1c1), to(#ff7ab4));
   background: linear-gradient(to right, #ffc1c1, #ff7ab4);
+}
+@media screen and (max-width: 750px) {
+  h2 {
+    font-size: 1.2rem;
+  }
 }
 
 h3 {
@@ -226,19 +232,17 @@ hr {
 .content_title {
   background: none;
   text-align: center;
-  color: transparent;
-  height: 21px;
+  color: var(--c_main);
   width: auto;
   margin: 40px 0 30px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
 }
-.content_title.content_title-info {
-  background-image: url(../public/title_info.svg);
-}
-.content_title.content_title-link {
-  background-image: url(../public/title_link.svg);
+@media screen and (max-width: 750px) {
+  .content_title {
+    height: 3.6vw;
+    margin: 8vw 0 6vw;
+  }
 }
 .content_title-blog {
   padding: 4px 0;
@@ -257,6 +261,11 @@ hr {
   margin: 0.3rem 0;
   background-color: transparent;
 }
+@media screen and (max-width: 750px) {
+  .hr-top {
+    height: 6.4vw;
+  }
+}
 .hr-top::before {
   content: "";
   position: absolute;
@@ -265,6 +274,12 @@ hr {
   background-color: #eeeeee;
   right: 0;
   bottom: 16px;
+}
+@media screen and (max-width: 750px) {
+  .hr-top::before {
+    height: 0.2vw;
+    bottom: 3.2vw;
+  }
 }
 .hr-top::after {
   content: "";
@@ -275,6 +290,12 @@ hr {
   right: 0;
   bottom: 0;
   background-size: contain;
+}
+@media screen and (max-width: 750px) {
+  .hr-top::after {
+    width: 4.2vw;
+    height: 6.4vw;
+  }
 }
 
 .post-top {

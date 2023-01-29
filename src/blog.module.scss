@@ -57,7 +57,10 @@
     a {
       color: var(--c_fg);
       text-decoration: none;
-      font-size: 18px;
+      @include rem(18);
+      @include sp {
+        @include rem(16);
+      }
     }
   }
   :global(h4) {

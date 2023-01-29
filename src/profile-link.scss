@@ -1,0 +1,92 @@
+@charset "utf-8";
+@import "_setting";
+
+ul.profile_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding-left: 0;
+  li {
+    flex: 1;
+    margin-right: 20px;
+    @include sp {
+      margin-right: 2vw;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+    a.profile_list_item {
+      display: block;
+      width: 100%;
+      text-align: center;
+      border-radius: 8px;
+      transition-duration: 0.2s;
+      @include sp {
+        border-radius: 0.8vw;
+      }
+      &.twitter {
+        color: #0e73ba;
+        background-color: #f8fbff;
+        box-shadow: 3px 3px 0 #3e8fc8;
+        @include sp {
+          box-shadow: 0.6vw 0.6vw 0 #3e8fc8;
+        }
+      }
+      &.blogwp {
+        color: #bc3d10;
+        background-color: #fffcf3;
+        box-shadow: 3px 3px 0 #f99355;
+        @include sp {
+          box-shadow: 0.6vw 0.6vw 0 #f99355;
+        }
+      }
+      &.webwp {
+        color: #516ea1;
+        background-color: #f4f7fa;
+        box-shadow: 3px 3px 0 #748bb4;
+        @include sp {
+          box-shadow: 0.6vw 0.6vw 0 #748bb4;
+        }
+      }
+      &.github {
+        color: var(--c_red);
+        background-color: var(--c_bg);
+        box-shadow: 3px 3px 0 #cf5e5e;
+        @include sp {
+          box-shadow: 0.6vw 0.6vw 0 #cf5e5e;
+        }
+      }
+      @include pc {
+        &:hover {
+          opacity: 1;
+          box-shadow: none;
+          transform: translateY(3px);
+        }
+      }
+      .text {
+        display: inline-block;
+        text-align: left;
+        @include rem(18);
+        margin: 12px 0;
+        font-weight: 700;
+        font-family: 'Playfair Display', serif;
+        @include sp {
+          margin: 1.2vw 0;
+          @include rem(14);
+          overflow-y: hidden;
+          max-height: 12vw;
+        }
+        span {
+          @include rem(12);
+          font-weight: 700;
+          font-family: 'Lato', sans-serif;
+          @include sp {
+            @include rem(10);
+          }
+        }
+      }
+    }
+  }
+
+}

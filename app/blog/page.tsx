@@ -45,15 +45,10 @@ const BlogPage = async () => {
                 </div>
                 <PostTitle post={post}/>
                 <PostExcerpt post={post}/>
-                {/*<ReadMoreLink post={post} />*/}
                 <hr className="divider"></hr>
               </div>
             )
           })}
-
-          {/*<footer>
-            <NextPageLink firstPost={firstPost} posts={posts} />
-          </footer>*/}
         </div>
 
         <div className={styles.subContent}>

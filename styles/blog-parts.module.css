@@ -7,6 +7,7 @@
       -ms-flex-align: center;
           align-items: center;
   font-size: 14px;
+  font-size: 0.875rem;
   color: var(--c_main);
   margin-right: 6px;
 }
@@ -19,6 +20,7 @@
 .postTags {
   position: relative;
   font-size: 13px;
+  font-size: 0.8125rem;
 }
 .postTags a {
   padding: 0 5px;
@@ -31,13 +33,7 @@
 
 .postTitle {
   margin-top: 1.6rem;
-  font-size: 30px;
   color: var(--c_main);
-}
-@media screen and (max-width: 750px) {
-  .postTitle {
-    font-size: 1.2rem;
-  }
 }
 
 .postExcerpt {
