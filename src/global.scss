@@ -106,12 +106,10 @@ h1 {
 
 h2 {
   margin: 0;
-  color: var(--c_white);
+  color: var(--c_main);
   font-size: 1.6rem;
   font-weight: 700;
-  font-family: 'Playfair Display', serif;
   width: 100%;
-  background: linear-gradient(to right, #ffc1c1, #ff7ab4);
   @include sp {
     font-size: 1.2rem;
   }
@@ -216,7 +214,6 @@ hr {
   font-weight: 700;
   font-family: 'Playfair Display', serif;
   @include sp {
-    height: 3.6vw;
     margin: 8vw 0 6vw;
   }
   &-blog {
@@ -377,4 +374,45 @@ hr {
 ::selection {
   background: var(--c_main);
   color: #fff;
+}
+
+/*-------------------------------------------- 
+margin
+--------------------------------------------*/
+$margin_list: (
+	0: (pc: 0, sp: 0),
+	10: (pc: 10px, sp: 1vw),
+	20: (pc: 20px, sp: 2vw),
+	30: (pc: 30px, sp: 3vw),
+	40: (pc: 40px, sp: 4vw),
+	60: (pc: 60px, sp: 6vw),
+	80: (pc: 80px, sp: 8vw),
+	100: (pc: 100px, sp: 10vw),
+);
+
+@each $class_name, $property in $margin_list{
+	.mt#{$class_name} {
+    margin-top: map-get($property,pc) !important;
+    @include sp {
+      margin-top: map-get($property,sp) !important;
+    }
+	}
+	.mb#{$class_name} {
+    margin-bottom: map-get($property,pc) !important;
+    @include sp {
+      margin-bottom: map-get($property,sp) !important;
+    }
+	}
+	.pt#{$class_name} {
+    padding-top: map-get($property,pc) !important;
+    @include sp {
+      padding-top: map-get($property,sp) !important;
+    }
+	}
+	.pb#{$class_name} {
+    padding-bottom: map-get($property,pc) !important;
+    @include sp {
+      padding-bottom: map-get($property,sp) !important;
+    }
+	}
 }

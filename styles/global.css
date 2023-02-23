@@ -114,13 +114,10 @@ h1 {
 
 h2 {
   margin: 0;
-  color: var(--c_white);
+  color: var(--c_main);
   font-size: 1.6rem;
   font-weight: 700;
-  font-family: "Playfair Display", serif;
   width: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(#ffc1c1), to(#ff7ab4));
-  background: linear-gradient(to right, #ffc1c1, #ff7ab4);
 }
 @media screen and (max-width: 750px) {
   h2 {
@@ -240,7 +237,6 @@ hr {
 }
 @media screen and (max-width: 750px) {
   .content_title {
-    height: 3.6vw;
     margin: 8vw 0 6vw;
   }
 }
@@ -439,4 +435,295 @@ hr {
 ::selection {
   background: var(--c_main);
   color: #fff;
+}
+
+/*-------------------------------------------- 
+margin
+--------------------------------------------*/
+.mt0 {
+  margin-top: 0 !important;
+}
+@media screen and (max-width: 750px) {
+  .mt0 {
+    margin-top: 0 !important;
+  }
+}
+
+.mb0 {
+  margin-bottom: 0 !important;
+}
+@media screen and (max-width: 750px) {
+  .mb0 {
+    margin-bottom: 0 !important;
+  }
+}
+
+.pt0 {
+  padding-top: 0 !important;
+}
+@media screen and (max-width: 750px) {
+  .pt0 {
+    padding-top: 0 !important;
+  }
+}
+
+.pb0 {
+  padding-bottom: 0 !important;
+}
+@media screen and (max-width: 750px) {
+  .pb0 {
+    padding-bottom: 0 !important;
+  }
+}
+
+.mt10 {
+  margin-top: 10px !important;
+}
+@media screen and (max-width: 750px) {
+  .mt10 {
+    margin-top: 1vw !important;
+  }
+}
+
+.mb10 {
+  margin-bottom: 10px !important;
+}
+@media screen and (max-width: 750px) {
+  .mb10 {
+    margin-bottom: 1vw !important;
+  }
+}
+
+.pt10 {
+  padding-top: 10px !important;
+}
+@media screen and (max-width: 750px) {
+  .pt10 {
+    padding-top: 1vw !important;
+  }
+}
+
+.pb10 {
+  padding-bottom: 10px !important;
+}
+@media screen and (max-width: 750px) {
+  .pb10 {
+    padding-bottom: 1vw !important;
+  }
+}
+
+.mt20 {
+  margin-top: 20px !important;
+}
+@media screen and (max-width: 750px) {
+  .mt20 {
+    margin-top: 2vw !important;
+  }
+}
+
+.mb20 {
+  margin-bottom: 20px !important;
+}
+@media screen and (max-width: 750px) {
+  .mb20 {
+    margin-bottom: 2vw !important;
+  }
+}
+
+.pt20 {
+  padding-top: 20px !important;
+}
+@media screen and (max-width: 750px) {
+  .pt20 {
+    padding-top: 2vw !important;
+  }
+}
+
+.pb20 {
+  padding-bottom: 20px !important;
+}
+@media screen and (max-width: 750px) {
+  .pb20 {
+    padding-bottom: 2vw !important;
+  }
+}
+
+.mt30 {
+  margin-top: 30px !important;
+}
+@media screen and (max-width: 750px) {
+  .mt30 {
+    margin-top: 3vw !important;
+  }
+}
+
+.mb30 {
+  margin-bottom: 30px !important;
+}
+@media screen and (max-width: 750px) {
+  .mb30 {
+    margin-bottom: 3vw !important;
+  }
+}
+
+.pt30 {
+  padding-top: 30px !important;
+}
+@media screen and (max-width: 750px) {
+  .pt30 {
+    padding-top: 3vw !important;
+  }
+}
+
+.pb30 {
+  padding-bottom: 30px !important;
+}
+@media screen and (max-width: 750px) {
+  .pb30 {
+    padding-bottom: 3vw !important;
+  }
+}
+
+.mt40 {
+  margin-top: 40px !important;
+}
+@media screen and (max-width: 750px) {
+  .mt40 {
+    margin-top: 4vw !important;
+  }
+}
+
+.mb40 {
+  margin-bottom: 40px !important;
+}
+@media screen and (max-width: 750px) {
+  .mb40 {
+    margin-bottom: 4vw !important;
+  }
+}
+
+.pt40 {
+  padding-top: 40px !important;
+}
+@media screen and (max-width: 750px) {
+  .pt40 {
+    padding-top: 4vw !important;
+  }
+}
+
+.pb40 {
+  padding-bottom: 40px !important;
+}
+@media screen and (max-width: 750px) {
+  .pb40 {
+    padding-bottom: 4vw !important;
+  }
+}
+
+.mt60 {
+  margin-top: 60px !important;
+}
+@media screen and (max-width: 750px) {
+  .mt60 {
+    margin-top: 6vw !important;
+  }
+}
+
+.mb60 {
+  margin-bottom: 60px !important;
+}
+@media screen and (max-width: 750px) {
+  .mb60 {
+    margin-bottom: 6vw !important;
+  }
+}
+
+.pt60 {
+  padding-top: 60px !important;
+}
+@media screen and (max-width: 750px) {
+  .pt60 {
+    padding-top: 6vw !important;
+  }
+}
+
+.pb60 {
+  padding-bottom: 60px !important;
+}
+@media screen and (max-width: 750px) {
+  .pb60 {
+    padding-bottom: 6vw !important;
+  }
+}
+
+.mt80 {
+  margin-top: 80px !important;
+}
+@media screen and (max-width: 750px) {
+  .mt80 {
+    margin-top: 8vw !important;
+  }
+}
+
+.mb80 {
+  margin-bottom: 80px !important;
+}
+@media screen and (max-width: 750px) {
+  .mb80 {
+    margin-bottom: 8vw !important;
+  }
+}
+
+.pt80 {
+  padding-top: 80px !important;
+}
+@media screen and (max-width: 750px) {
+  .pt80 {
+    padding-top: 8vw !important;
+  }
+}
+
+.pb80 {
+  padding-bottom: 80px !important;
+}
+@media screen and (max-width: 750px) {
+  .pb80 {
+    padding-bottom: 8vw !important;
+  }
+}
+
+.mt100 {
+  margin-top: 100px !important;
+}
+@media screen and (max-width: 750px) {
+  .mt100 {
+    margin-top: 10vw !important;
+  }
+}
+
+.mb100 {
+  margin-bottom: 100px !important;
+}
+@media screen and (max-width: 750px) {
+  .mb100 {
+    margin-bottom: 10vw !important;
+  }
+}
+
+.pt100 {
+  padding-top: 100px !important;
+}
+@media screen and (max-width: 750px) {
+  .pt100 {
+    padding-top: 10vw !important;
+  }
+}
+
+.pb100 {
+  padding-bottom: 100px !important;
+}
+@media screen and (max-width: 750px) {
+  .pb100 {
+    padding-bottom: 10vw !important;
+  }
 }

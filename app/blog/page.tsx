@@ -38,14 +38,13 @@ const BlogPage = async () => {
 
           {posts.map(post => {
             return (
-              <div className={styles.post} key={post.Slug}>
-                <div className="col2">
+              <div className={styles.post + 'mb30'} key={post.Slug}>
+                <div className="col2 mb10">
                   <PostDate post={post}/>
                   <PostTags post={post}/>
                 </div>
                 <PostTitle post={post}/>
-                <PostExcerpt post={post}/>
-                <hr className="divider"></hr>
+                <hr className="divider mt10"></hr>
               </div>
             )
           })}

@@ -6,7 +6,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   max-width: 1400px;
-  padding: 0 3%;
+  padding: 0 2%;
   margin: 0 auto;
   margin-top: 1.1rem;
 }
@@ -14,6 +14,7 @@
   .container {
     display: block;
     margin-top: 10px;
+    padding: 0 2%;
   }
 }
 
@@ -29,7 +30,7 @@
   }
 }
 .mainContent header {
-  padding: 0 0 1.1rem;
+  padding: 0 0 2rem;
   text-align: center;
 }
 .mainContent footer {
@@ -53,11 +54,8 @@
   }
 }
 
-.post {
-  margin: 0 auto 40px;
-}
 .post:last-child {
-  margin: 0 auto;
+  margin: 0 auto !important;
 }
 .post a {
   text-decoration: none;
@@ -67,6 +65,7 @@
 }
 .post :global(h3) a {
   color: var(--c_fg);
+  font-weight: normal;
   text-decoration: none;
   font-size: 18px;
   font-size: 1.125rem;

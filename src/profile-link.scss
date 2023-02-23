@@ -21,47 +21,18 @@ ul.profile_list {
       width: 100%;
       text-align: center;
       border-radius: 8px;
-      transition-duration: 0.2s;
+      padding: 8px 0;
+      transition-duration: 0.4s;
+      color: var(--c_main);
+      background-color: var(--c_sub);
       @include sp {
+        padding: 0.4vw 0;
         border-radius: 0.8vw;
-      }
-      &.twitter {
-        color: #0e73ba;
-        background-color: #f8fbff;
-        box-shadow: 3px 3px 0 #3e8fc8;
-        @include sp {
-          box-shadow: 0.6vw 0.6vw 0 #3e8fc8;
-        }
-      }
-      &.blogwp {
-        color: #bc3d10;
-        background-color: #fffcf3;
-        box-shadow: 3px 3px 0 #f99355;
-        @include sp {
-          box-shadow: 0.6vw 0.6vw 0 #f99355;
-        }
-      }
-      &.webwp {
-        color: #516ea1;
-        background-color: #f4f7fa;
-        box-shadow: 3px 3px 0 #748bb4;
-        @include sp {
-          box-shadow: 0.6vw 0.6vw 0 #748bb4;
-        }
-      }
-      &.github {
-        color: var(--c_red);
-        background-color: var(--c_bg);
-        box-shadow: 3px 3px 0 #cf5e5e;
-        @include sp {
-          box-shadow: 0.6vw 0.6vw 0 #cf5e5e;
-        }
       }
       @include pc {
         &:hover {
           opacity: 1;
-          box-shadow: none;
-          transform: translateY(3px);
+          transform: translateY(-3px);
         }
       }
       .text {
@@ -76,14 +47,6 @@ ul.profile_list {
           @include rem(14);
           overflow-y: hidden;
           max-height: 12vw;
-        }
-        span {
-          @include rem(12);
-          font-weight: 700;
-          font-family: 'Lato', sans-serif;
-          @include sp {
-            @include rem(10);
-          }
         }
       }
     }
